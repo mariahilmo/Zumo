@@ -1,13 +1,13 @@
 
 class Behavior():
 
-    def __init__(self, sensob, bbcon):
+    def __init__(self, sensob, bbcon, priority = 0):
         self.bbcon = bbcon
         self.sensob = sensob
         self.motor_recommendations = [] # list with tuples
         self.active_flag = False
         self.halt_request = False
-        self.priority = 0
+        self.priority = priority
         self.match_degree = 0
         self.weight = 0
 
