@@ -28,6 +28,7 @@ class Behavior():
     def update(self):
         pass
 
+    
     """
     The core computations performed by the behavior that use sensob readings to produce motor recommendations
     Gathering the values of its sensobs (and possibly checking for relevant posts on the bbcon), and using this
