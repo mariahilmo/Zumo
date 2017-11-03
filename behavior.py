@@ -1,13 +1,13 @@
 
 class Behavior():
 
-    def __init__(self, sensob, bbcon):
+    def __init__(self, sensob, bbcon, priority = 0.1):
         self.bbcon = bbcon
         self.sensob = sensob
         self.motor_recommendations = [] # list with tuples
         self.active_flag = False
         self.halt_request = False
-        self.priority = 0
+        self.priority = priority
         self.match_degree = 0
         self.weight = 0
 
@@ -27,7 +27,6 @@ class Behavior():
     """
     def update(self):
         pass
-
 
     """
     The core computations performed by the behavior that use sensob readings to produce motor recommendations
